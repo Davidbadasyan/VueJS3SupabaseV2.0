@@ -59,6 +59,7 @@ async function login() {
 
 async function send() {
 	await supabase.auth.resetPasswordForEmail(email.value)
+	alert('please check your email')
 }
 
 async function loginWithGoogle() {
